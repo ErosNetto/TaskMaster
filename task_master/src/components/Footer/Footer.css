@@ -48,27 +48,55 @@
   filter: brightness(0) invert(1);
 }
 
-/* instagram*/
+/* Instagram */
 .containerOne:hover {
-  background-color: #d62976;
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
   transform: scale(1.5);
 }
 
-/* GitHub*/
+/* GitHub */
 .containerTwo:hover {
-  background-color: #00acee;
+  background: linear-gradient(
+    45deg,
+    #5a2c91 0%,
+    #70369c 25%,
+    #8b4ea1 50%,
+    #a66eb3 75%,
+    #d1c6e1 100%
+  );
   transform: scale(1.5);
 }
 
-/* linkdin*/
+/* LinkedIn */
 .containerThree:hover {
-  background-color: #0072b1;
+  background: linear-gradient(
+    45deg,
+    #0072b1 0%,
+    #0073e6 25%,
+    #0084ff 50%,
+    #0091ff 75%,
+    #00a2ff 100%
+  );
   transform: scale(1.5);
 }
 
-/* Whatsapp*/
+/* WhatsApp */
 .containerFour:hover {
-  background-color: #25d366;
+  background: linear-gradient(
+    45deg,
+    #1a8f3c 0%,
+    #25d366 25%,
+    #2bdc6a 50%,
+    #3bd76c 75%,
+    #47e08d 100%
+  );
   transform: scale(1.5);
 }
 
