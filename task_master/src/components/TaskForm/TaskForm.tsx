@@ -4,7 +4,7 @@ import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import styles from "./TaskForm.module.css";
 
 // Interface
-import { ITask } from "../interfaces/Task";
+import { ITask } from "../../interfaces/Task";
 
 interface Props {
   btnText: string;
@@ -60,24 +60,30 @@ const TaskForm = ({
   return (
     <form onSubmit={addTasHandler} className={styles.form}>
       <div className={styles.input_container}>
-        <label htmlFor="title">Título:</label>
-        <input
-          type="text"
-          name="title"
-          placeholder="Título da tarefa..."
-          onChange={handleChange}
-          value={title}
-        />
-      </div>
-      <div className={styles.input_container}>
-        <label htmlFor="difficulty">Duficuldade:</label>
-        <input
-          type="text"
-          name="difficulty"
-          placeholder="Dificuldade da tarefa..."
-          onChange={handleChange}
-          value={difficulty}
-        />
+        <div className={styles.input_group}>
+          <input
+            required
+            type="text"
+            name="title"
+            className="input"
+            onChange={handleChange}
+            value={title}
+          />
+          <label>Título</label>
+        </div>
+
+        <div className={styles.input_group}>
+          <input
+            required
+            type="number"
+            name="difficulty"
+            className="input"
+            onChange={handleChange}
+            value={difficulty}
+            min={0}
+          />
+          <label>Duficuldade</label>
+        </div>
       </div>
       <input type="submit" value={btnText} />
     </form>
