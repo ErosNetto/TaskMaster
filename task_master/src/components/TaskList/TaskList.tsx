@@ -24,16 +24,19 @@ function TaskList({ taskList, handleDelete, handleEdit }: Props) {
             </div>
 
             <div className={styles.actions}>
-              <i className="bi bi-pencil" onClick={() => handleEdit(task)}></i>
               <i
-                className="bi bi-trash"
+                className={`bi bi-pencil ${styles.editIcon}`}
+                onClick={() => handleEdit(task)}
+              ></i>
+              <i
+                className={`bi bi-trash ${styles.deleteIcon}`}
                 onClick={() => handleDelete(task.id)}
               ></i>
             </div>
           </div>
         ))
       ) : (
-        <p>Não há tarefas cadastradas</p>
+        <p className={styles.notTasks}>Não há tarefas cadastradas</p>
       )}
     </>
   );

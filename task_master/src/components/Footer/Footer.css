@@ -5,7 +5,7 @@
   justify-content: center;
   height: 12em;
   padding: 1rem;
-  background: #2c2c2c;
+  background: #212121;
   color: #fff;
 }
 
@@ -34,7 +34,8 @@
 .socialContainer {
   width: 52px;
   height: 52px;
-  background-color: rgb(44, 44, 44);
+  /* background-color: rgb(44, 44, 44); */
+  background: #212121;
   display: flex;
   align-items: center;
   justify-content: center;

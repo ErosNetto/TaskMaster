@@ -73,8 +73,8 @@ function App() {
             setTaskList={setTaskList}
           />
         </div>
-        <div>
-          <h2>Suas tarefas:</h2>
+        <div className={styles.tasks}>
+          <h2>Suas tarefas</h2>
           <TaskList
             taskList={taskList}
             handleDelete={deleteTask}

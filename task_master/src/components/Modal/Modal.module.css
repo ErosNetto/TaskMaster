@@ -1,28 +1,33 @@
 .fade {
   width: 100%;
   height: 100%;
-  position: absolute;
-  background: #000;
-  opacity: 0.3;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .modal {
-  position: absolute;
-  top: 10%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 500px;
   height: 400px;
-  z-index: 1;
-  background: #fff;
+  z-index: 2;
+  background: #2c2c2c;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 .modal h2 {
+  color: #fff;
   margin-bottom: 1em;
 }
 

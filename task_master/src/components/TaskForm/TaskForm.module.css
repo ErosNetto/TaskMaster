@@ -4,9 +4,9 @@
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  background: #2c2c2c;
   border-radius: 1rem;
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  background: #212121;
+  box-shadow: 10px 10px 20px rgb(25, 25, 25), -10px -10px 30px rgb(60, 60, 60);
 }
 
 .form input[type="submit"] {
@@ -21,8 +21,8 @@
 }
 
 .form input[type="submit"]:hover {
-  background-color: #1a73e8;
-  box-shadow: 0 0 20px #1a73e8;
+  background-color: #1766ce;
+  box-shadow: 0 0 10px #1766ce;
   transform: scale(1.03);
 }
 
@@ -73,7 +73,7 @@
 .input_group input:focus ~ label,
 .input_group input:valid ~ label {
   transform: translateY(-50%) scale(0.8);
-  background-color: #333;
+  background-color: #212121;
   padding: 0 0.2em;
   color: #2196f3;
 }

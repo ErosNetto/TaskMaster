@@ -11,7 +11,7 @@ interface Props {
   taskList: ITask[];
   setTaskList?: React.Dispatch<React.SetStateAction<ITask[]>>;
   task?: ITask | null;
-  handleUpdate?(id: number, title: string, difficulty: number): void;
+  handleUpdate?(id: number, title: string, difficulty: number | null): void;
 }
 
 const TaskForm = ({
@@ -23,7 +23,7 @@ const TaskForm = ({
 }: Props) => {
   const [id, setId] = useState<number>(0);
   const [title, setTitle] = useState<string>("");
-  const [difficulty, setDifficulty] = useState<number>(0);
+  const [difficulty, setDifficulty] = useState<number | null>(null);
 
   useEffect(() => {
     if (task) {
@@ -45,7 +45,7 @@ const TaskForm = ({
       setTaskList!([...taskList, newTask]);
 
       setTitle("");
-      setDifficulty(0);
+      setDifficulty(null);
     }
   };
 
@@ -53,7 +53,8 @@ const TaskForm = ({
     if (e.target.name === "title") {
       setTitle(e.target.value);
     } else {
-      setDifficulty(parseInt(e.target.value));
+      const value = e.target.value;
+      setDifficulty(value === "" ? null : parseInt(value));
     }
   };
 
@@ -65,6 +66,7 @@ const TaskForm = ({
             required
             type="text"
             name="title"
+            autoComplete="off"
             className="input"
             onChange={handleChange}
             value={title}
@@ -77,12 +79,13 @@ const TaskForm = ({
             required
             type="number"
             name="difficulty"
+            autoComplete="off"
             className="input"
             onChange={handleChange}
-            value={difficulty}
+            value={difficulty !== null ? difficulty.toString() : ""}
             min={0}
           />
-          <label>Duficuldade</label>
+          <label>Dificuldade</label>
         </div>
       </div>
       <input type="submit" value={btnText} />

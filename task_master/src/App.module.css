@@ -1,9 +1,15 @@
 .main {
-  min-height: 80vh;
+  min-height: 75vh;
   text-align: center;
   padding: 2em;
+  background: #2c2c2c;
 }
 
 .main h2 {
-  margin-bottom: 0.8em;
+  margin-bottom: 1em;
+  color: #fff;
+}
+
+.main .tasks {
+  margin-top: 1em;
 }
