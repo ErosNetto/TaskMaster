@@ -3,7 +3,7 @@ import "./Footer.css";
 import Whatsapp from "../../assets/whatsapp.svg";
 import Github from "../../assets/github.svg";
 import Instagram from "../../assets/instagram.svg";
-import Linkedin from "../../assets/linkedin.svg";
+import Linkedin from "../../assets/linkedin-plain.svg";
 
 const Footer = () => {
   return (
