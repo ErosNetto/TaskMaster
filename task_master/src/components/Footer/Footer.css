@@ -83,12 +83,11 @@
 .containerThree:hover {
   background: linear-gradient(
     45deg,
-    #d93025 15%,
-    #fbbc05 35%,
-    #1a73e8 65%,
+    #d93025 20%,
+    #fbbc05 40%,
+    #1a73e8 60%,
     #34a853 80%
   );
-
   transform: scale(1.5);
 }
 
