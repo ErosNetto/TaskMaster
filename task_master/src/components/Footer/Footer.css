@@ -10,15 +10,16 @@
 }
 
 .contact-title {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 800;
   text-transform: uppercase;
 }
 
 .copyright {
-  margin-top: 1rem;
-  font-size: 0.875rem;
+  margin: 1rem;
+  font-size: 1.2rem;
   text-align: center;
+  font-weight: 500;
 }
 
 .contact-card {
