@@ -2,6 +2,7 @@ import "./Footer.css";
 
 import Instagram from "../../assets/instagram.svg";
 import Github from "../../assets/github.svg";
+import Gmail from "../../assets/gmail.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import Whatsapp from "../../assets/whatsapp.svg";
 
@@ -27,10 +28,18 @@ const Footer = () => {
           <img src={Github} alt="GitHub" />
         </a>
         <a
-          href="https://www.linkedin.com/in/eros-netto/"
+          href="mailto:erosnetto1002@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
           className="socialContainer containerThree"
+        >
+          <img src={Gmail} alt="Email" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/eros-netto/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="socialContainer containerFour"
         >
           <img src={Linkedin} alt="LinkedIn" />
         </a>
@@ -38,7 +47,7 @@ const Footer = () => {
           href="https://wa.me/5541984942439"
           target="_blank"
           rel="noopener noreferrer"
-          className="socialContainer containerFour"
+          className="socialContainer containerFive"
         >
           <img src={Whatsapp} alt="WhatsApp" />
         </a>
