@@ -13,6 +13,7 @@ const Footer = () => {
         <a
           href="https://www.instagram.com/eros_netto"
           target="_blank"
+          rel="noopener noreferrer"
           className="socialContainer containerOne"
         >
           <img src={Instagram} alt="Instagram" />
@@ -20,6 +21,7 @@ const Footer = () => {
         <a
           href="https://github.com/ErosNetto"
           target="_blank"
+          rel="noopener noreferrer"
           className="socialContainer containerTwo"
         >
           <img src={Github} alt="GitHub" />
@@ -27,6 +29,7 @@ const Footer = () => {
         <a
           href="https://www.linkedin.com/in/eros-netto/"
           target="_blank"
+          rel="noopener noreferrer"
           className="socialContainer containerThree"
         >
           <img src={Linkedin} alt="LinkedIn" />
@@ -34,6 +37,7 @@ const Footer = () => {
         <a
           href="https://wa.me/5541984942439"
           target="_blank"
+          rel="noopener noreferrer"
           className="socialContainer containerFour"
         >
           <img src={Whatsapp} alt="WhatsApp" />
