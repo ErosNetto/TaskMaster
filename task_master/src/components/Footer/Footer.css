@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 12em;
+  /* height: 12em; */
   padding: 1rem;
   background: #212121;
   color: #1a73e8;
@@ -27,6 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 25px 25px;
   gap: 20px;
 }
@@ -34,7 +35,6 @@
 .socialContainer {
   width: 52px;
   height: 52px;
-  /* background-color: rgb(44, 44, 44); */
   background: #212121;
   display: flex;
   align-items: center;
