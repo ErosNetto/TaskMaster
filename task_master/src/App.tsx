@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 // Css
 import styles from "./App.module.css";
@@ -54,7 +54,7 @@ function App() {
   return (
     <div>
       <Modal
-        childrean={
+        children={
           <TaskForm
             btnText="Editar Tarefa"
             taskList={taskList}

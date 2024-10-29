@@ -3,13 +3,15 @@ import React from "react";
 import styles from "./Modal.module.css";
 
 interface Props {
-  childrean: React.ReactNode;
+  children: React.ReactNode;
 }
 
-const Modal = ({ childrean }: Props) => {
-  const closeModal = (e: React.MouseEvent): void => {
+const Modal = ({ children }: Props) => {
+  const closeModal = (): void => {
     const modal = document.querySelector("#modal");
-    modal!.classList.add("hide");
+    if (modal) {
+      modal.classList.add("hide");
+    }
   };
 
   return (
@@ -17,7 +19,7 @@ const Modal = ({ childrean }: Props) => {
       <div className={styles.fade} onClick={closeModal}></div>
       <div className={styles.modal}>
         <h2>Editar tarefa</h2>
-        {childrean}
+        {children}
       </div>
     </div>
   );
