@@ -2,7 +2,7 @@
 
 **TaskMaster** é projeto de uma lista de tarefas simples, desenvolvida utilizando React e TypeScript.
 
-![Imagem do TaskMaster](./task_master/public/projeto_task_master.png)
+![Imagem do TaskMaster](./readmeImg/projeto_task_master.png)
 
 ## 🚀 Funcionalidades
 
